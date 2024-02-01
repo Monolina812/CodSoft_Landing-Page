@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+:root{
+    --primary-color: rgb(218, 78, 155);
+    --text-dark:rgb(62, 2, 76);
+    --text-light: rgb(103, 189, 230);
+    --extra-light: rgb(141, 11, 87);
+
+    --max-width: 1300px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none;
+}
+
+input::placeholder{
+    color: rgb(134, 23, 133);
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    background-image:url(beach.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.nav_logo a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(243, 244, 249);
+    text-shadow: 0.2vw 0.2vw 0.2vw rgb(106, 13, 113);
+
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:3rem;
+    color: beige;
+    text-shadow: 0.2vw 0.2vw 0.2vw rgb(90, 3, 130);
+}
+
+.nav_links.link{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:purple;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.nav_links.link:hover{
+    color: purple;
+}
+
+
+.container{
+    display:flex;
+    min-height: 100vh;
+    max-width: var(--extra-light);
+    margin: auto;
+    padding: 2rem;
+    padding-top: 100px;
+    position:relative;
+}
+
+.container_left,
+.container_right{
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container_left.content{
+    max-width: 400px;
+    display: grid;
+    gap: 1rem;
+}
+
+.content h1{
+    font-size: 3rem;
+    line-height: 3rem;
+    color: rgb(16, 189, 82);
+    font-weight: 700;
+    text-shadow: 2px 2px rgb(200, 232, 15);
+    
+}
+
+.content p{
+    color: rgb(224, 220, 231);
+    text-shadow: 1px 1px 1px rgb(113, 4, 113);
+}
+
+.btns{
+    display:flex;
+    gap:1 rem;
+}
+
+.btns button{
+    padding: .5rem 2rem;
+    color: rgb(134, 7, 122);
+    font-size: 1rem;
+    background-color: pink;
+    outline: none;
+    border: 2px solid rgb(72, 5, 91);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.read_more{
+    background-color: var(--extra-light);
+    color: var(--text-dark)
+}
+
+.chevrons{
+    display:flex;
+    gap: 1rem;
+}
+
+.chevrons_span{
+    height:40px;
+    width:40px;
+    font-size: 1.5rem;
+    color: var(--extra-light);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid var(--extra-light);
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+
+.chevrons_span:hover{
+    background-color:var(--extra-light);
+}
+
+.container_right{
+    justify-content: flex-end;
+
+
+}
+
+form{
+    width: 350px;
+    display:grid;
+    border-radius:5px;
+    background-color: var(--text-light);
+    color: var(--extra-light)
+}
+
+form h4{
+    font-size: 1.2rem;
+    font-weight:600;
+    padding: 2rem;
+
+}
+
+.form_group{
+    display:grid;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.form_group input{
+    padding: .5rem;
+    font-size: 1rem;
+    color: var(--extra-light);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--extra-light);
+}
+
+form button{
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--extra-light);
+    cursor:pointer;
+
+
+}
+
+iframe{
+    margin:2vw;
+    display: inline block;
+    border: 0.5 solid rgb(44, 6, 180);
+    width:40vw;
+    height:20vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw rgb(94, 9, 205);
+    gap:3vw;
+}
+
